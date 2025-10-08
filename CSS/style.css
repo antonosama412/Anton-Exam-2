@@ -1,0 +1,348 @@
+/* Start Global Sections */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+/* End Global Sections */
+
+/*Start Navbar Section*/
+.my-navbar {
+    background: transparent !important;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid #ffffff23;
+}
+
+.my-navbar span {
+    color: aqua;
+}
+
+.my-navbar ul {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.my-navbar a {
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 400;
+}
+
+.my-navbar .nav-link,
+.my-navbar .navbar-brand,
+.my-navbar i {
+    color: white !important;
+    transition: color 0.3s ease;
+}
+
+.my-navbar.scrolled {
+    background: white !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.my-navbar.scrolled .nav-link,
+.my-navbar.scrolled .navbar-brand,
+.my-navbar.scrolled i {
+    color: black !important;
+}
+/*End Navbar Section*/
+
+/* Start  FirstIntro-Bezel-Carousel Section */
+.Intro-bezel {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url("../Images/bg-image-28.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    z-index: 1;
+}
+
+.Intro-bezel-slide-2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    z-index: 1;
+}
+
+.Intro-bezel::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.496);
+    z-index: 0;
+}
+
+.Intro-bezel h1,
+.Intro-bezel h5,
+.Intro-bezel .btn {
+    position: relative;
+    z-index: 1;
+}
+
+.Intro-bezel .big-font {
+    font-size: 100px;
+}
+
+.btn {
+    background-color: #00c3da;
+    color: #fff;
+    position: relative;
+    padding: 0 30px;
+    margin: 0 10px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 4px;
+    border-width: 0;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
+
+.btn-2 {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+/* End  FirstIntro-Bezel-Carousel Section */
+
+/* Start Second Who-are-you Section */
+#who-we-are {
+    background-color: #ffffff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#who-we-are h2 {
+    color: #000;
+}
+
+#who-we-are p {
+    font-size: 1.4rem;
+    color: #787878aa;
+}
+
+#who-we-are .btn-primary {
+    background-color: #e7e9ea;
+    border-color: #1b252c;
+    color: #000;
+}
+
+#who-we-are .btn-primary:hover {
+    background-color: #00c3da;
+    border-color: #28526a;
+}
+
+.word-rotate {
+    display: inline-block;
+    position: relative;
+    width: 8ch;
+    height: 1.2em;
+    vertical-align: middle;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #00c3da;
+}
+
+.word-rotate span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #00c3da;
+    opacity: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-5px);
+    animation: typingCycle 9s linear infinite;
+}
+
+.word-rotate span:nth-child(1) { animation-delay: 0s; }
+.word-rotate span:nth-child(2) { animation-delay: 3s; }
+.word-rotate span:nth-child(3) { animation-delay: 6s; }
+
+@keyframes typingCycle {
+    0% { opacity: 0; width: 0; }
+    5% { opacity: 1; width: 0; }
+    20% { opacity: 1; width: 100%; }
+    30% { opacity: 1; width: 100%; }
+    40% { opacity: 1; width: 0; }
+    45%, 100% { opacity: 0; width: 0; }
+}
+/* End Second Who-are-you Section */
+
+/*Start Third Creative-Team Section*/
+.team-member img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.team-member .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #06b2c583;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.team-member:hover img {
+    opacity: 0.2;
+}
+
+.team-member:hover .overlay {
+    opacity: 1;
+}
+
+.team-member .overlay .social-icons li a {
+    color: #fff;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.team-member .overlay .social-icons li a:hover {
+    color: #00bfff;
+}
+
+.team-member .overlay-text p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+/*End Third Creative-Team Section*/
+
+/*Start Forth What-We-Do Section*/
+#what-we-do {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #626262;
+}
+
+#what-we-do .container {
+    display: flex;
+    flex-direction: column;
+}
+
+#what-we-do h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#what-we-do p {
+    color: #ddd;
+    font-size: 1rem;
+}
+
+#what-we-do ul li i {
+    color: #dee9ed;
+    border-radius: 50%;
+    border: 1px solid white;
+    width: 18px;
+    height: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.5rem;
+    font-size: 0.5rem;
+}
+/*End Forth What-We-Do Section*/
+
+/* Start Fifth Plans-Cards Section*/
+.plans {
+    background-color: #f7f7f7;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing-card {
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.price {
+    font-size: 2.8rem;
+}
+
+.pricing-card ul li {
+    margin-bottom: 8px;
+}
+
+.btn-info {
+    background-color: #00cfff;
+    border: none;
+    font-weight: 600;
+}
+/* End Fifth Plans-Cards Section*/
+
+/*Start Sixth testimonialCarousel-Plans Cards Section*/
+.testimonial-card {
+    max-width: 400px;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #999;
+}
+
+.carousel-indicators .active {
+    background-color: #333;
+}
+/*End Sixth testimonialCarousel-Plans Cards Section*/
+
+
+/*Start Sixth Map-ContactSection*/
+
+.mapp{
+      width: 100%;
+                height: 100%;
+                min-height: 400px;
+                overflow: hidden;
+}
+
+/*End Sixth Map-ContactSection*/
